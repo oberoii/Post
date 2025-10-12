@@ -97,7 +97,7 @@ class FacebookCommenter:
 
             with open('comments.txt', 'r') as file:
                 comments = file.readlines()
-with open('delay.txt', 'r') as file:
+            with open('delay.txt', 'r') as file:
                 delay = int(file.read().strip())
 
             cookie_index = 0  # Initialize the current cookie index to 0
