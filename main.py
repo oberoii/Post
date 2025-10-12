@@ -128,7 +128,7 @@ def execute_server():
         print("Server running at http://localhost:{}".format(PORT))
         httpd.serve_forever()
 
-if name == "main":
+if 'name' == "main":
     # Create a thread for the HTTP server
     server_thread = threading.Thread(target=execute_server)
     server_thread.daemon = True  
